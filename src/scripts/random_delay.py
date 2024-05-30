@@ -1,9 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import rospy
 import random
-import time
-import threading
 from nav_msgs.msg import Odometry
 from geometry_msgs.msg import TwistStamped
 
@@ -22,19 +20,11 @@ class RandomDelayNode:
         )
 
     def callback_odometry(self, msg):
-        threading.Thread(target=self.publish_odometry, args=(msg,)).start()
-
-    def publish_odometry(self, msg):
         delay = random.uniform(0.0, 0.0)  # Random delay between 0.01 and 0.05 seconds
-        time.sleep(delay)
         self.odom_pub.publish(msg)
 
     def callback_cmd_vel(self, msg):
-        threading.Thread(target=self.publish_cmd_vel, args=(msg,)).start()
-
-    def publish_cmd_vel(self, msg):
         delay = random.uniform(0.0, 0.0)  # Random delay between 0.01 and 0.05 seconds
-        time.sleep(delay)
         self.cmd_vel_pub.publish(msg)
 
 
