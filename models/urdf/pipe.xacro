@@ -13,7 +13,7 @@
   <xacro:property name="scale_r" value="${$(arg radius)/7.5}" />
   <xacro:property name="scale_t" value="${$(arg thickness)/50}" />
   <xacro:property name="pillar_length" value="${$(arg altitude)-0.1-$(arg radius)}" />
-  <xacro:property name="mesh_file" value="package://ss_workshop/models/meshes/Plain_Cylinder.stl" />
+  <xacro:property name="mesh_file" value="package://summer_school_world/models/meshes/Plain_Cylinder.stl" />
 
   <!-- Macro for the inertia of a box -->
   <xacro:macro name="box_inertia" params="x y z mass">
