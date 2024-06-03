@@ -83,4 +83,7 @@
   <node pkg="summer_school_world" type="odometry_client.py" name="udp_send_odom" output="screen">
   </node>
 
+  <node pkg="summer_school_world" type="downlink_delay.py" name="downlink_delay_node" output="screen">
+  </node>
+
 </launch>
