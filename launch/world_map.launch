@@ -77,4 +77,10 @@
          -model 'pipe3'" respawn="false" output="screen">
   </node>
 
+  <node pkg="summer_school_world" type="command_server.py" name="udp_receive_cmd" output="screen">
+  </node>
+
+  <node pkg="summer_school_world" type="odometry_client.py" name="udp_send_odom" output="screen">
+  </node>
+
 </launch>
