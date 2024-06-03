@@ -77,7 +77,4 @@
          -model 'pipe3'" respawn="false" output="screen">
   </node>
 
-  <node pkg="summer_school_world" type="random_delay.py" name="random_delay_node" output="screen">
-  </node>
-
 </launch>
