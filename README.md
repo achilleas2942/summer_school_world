@@ -51,6 +51,11 @@ This work is a part of the AERO-TRAIN Summer School 2024. It was presented durin
   ```
     
 ### Run the Gazebo world locally
+- Replace the _pelican.xacro_ file from the _rotors_simulator_ repo with the one from the _summer_school_world_ repo
+  ```
+  rm <your_workspace_name>/src/rotors_simulator/rotors_description/urdf/pelican.xacro
+  cp <your_workspace_name>/src/summer_school_world/models/urdf/pelican.xacro <your_workspace_name>/src/rotors_simulator/rotors_description/urdf/pelican.xacro
+  ```
 - After building, e.g.
   ```
   catkin build summer_school_world
