@@ -13,27 +13,60 @@ This work is a part of the AERO-TRAIN Summer School 2024. It was presented durin
 
 ### Dependencies
 - [gazebo_plugins](https://wiki.ros.org/gazebo_plugins)
-    `sudo apt-get install -y ros-noetic-gazebo-plugins`
+  ```
+  sudo apt-get install -y ros-noetic-gazebo-plugins
+  ```
 - [gazebo_ros_pkgs](https://wiki.ros.org/gazebo_ros_pkgs)
-    `sudo apt-get install -y ros-noetic-gazebo-ros-pkgs`
+  ```
+  sudo apt-get install -y ros-noetic-gazebo-ros-pkgs
+  ```
 - [xarco](https://wiki.ros.org/xacro)
-    `sudo apt-get install -y ros-noetic-xacro`
+  ```
+  sudo apt-get install -y ros-noetic-xacro
+  ```
 - [octomap](https://wiki.ros.org/octomap)
-    `sudo apt-get install -y ros-noetic-octomap ros-noetic-octomap-msgs ros-noetic-octomap-ros`
+  ```
+  sudo apt-get install -y ros-noetic-octomap ros-noetic-octomap-msgs ros-noetic-octomap-ros
+  ```
 - [rqt_gui](https://wiki.ros.org/rqt_gui)
-    `sudo apt-get install -y rros-noetic-rqt-gui ros-noetic-rqt-gui-py`
+  ```
+  sudo apt-get install -y rros-noetic-rqt-gui ros-noetic-rqt-gui-py
+  ```
 - [mavros](https://github.com/mavlink/mavros)
-    `sudo apt-get install -y ros-noetic-mavros ros-noetic-mavros-msgs`
+  ```
+  sudo apt-get install -y ros-noetic-mavros ros-noetic-mavros-msgs
+  ```
 - [mav_comm](https://github.com/ethz-asl/mav_comm)
-    `git clone https://github.com/ethz-asl/mav_comm.git`
+  ```
+  git clone https://github.com/ethz-asl/mav_comm.git
+  ```
 - [rotors_simulator](https://github.com/ethz-asl/rotors_simulator)
-    `git clone https://github.com/ethz-asl/rotors_simulator.git`
-
+  ```
+  git clone https://github.com/ethz-asl/rotors_simulator.git
+  ```
+  
 ### Clone the repository
-    git clone https://github.com/achilleas2942/summer_school_world.git
+  ```
+  git clone https://github.com/achilleas2942/summer_school_world.git
+  ```
     
 ### Run the Gazebo world locally
-- After building (e.g. `catkin build summer_school_world` or `catkin_make summer_school_world`) and sourcing your workspace (e.g. `source <your_workspace_name>/devel/setup.bash`)
+- After building, e.g.
+  ```
+  catkin build summer_school_world
+  ```
+  or
+  ```
+  catkin_make summer_school_world
+  ```
+- And sourcing your workspace, e.g.
+  ```
+  source <your_workspace_name>/devel/setup.bash
+  ```
+- Execute the launch file
+  ```
+  roslaunch summer_school_world world_map.launch
+  ```
 
 ## Troubleshooting
 Consider opening an Issue if you have [troubles](https://github.com/achilleas2942/summer_school_world/issues) with the exercises of the repo.\
